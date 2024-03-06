@@ -1,0 +1,71 @@
+/* Add this to your cot.css file */
+
+.boo {
+  margin: 0;
+  font-family: 'YourPreferredFont', sans-serif; /* Replace 'YourPreferredFont' with your chosen font */
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0b2o7cY-PPg8xqobpDlY4l5TAWFF9Y-FVQ6TsCnGsXw&s'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1700px;
+height: 900px;
+  color: #fff; /* Default text color */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 5px;
+;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-item {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.5); /* Adjust the brightness as needed */
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff; /* Text color */
+  font-weight: bold;
+}
